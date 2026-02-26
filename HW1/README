@@ -1,0 +1,37 @@
+CLASS DESCRIPTIONS:
+Product: Product entity with ID, name, category, price, stock, supplier
+ProductInventory: Manages products using Vector<Product>
+OrderItem: Item in an order with product details and subtotal
+Order: Order entity with items, customer, status, date
+OrderManager: Manages orders using Vector<Order>
+VectorUtils: Generic utility methods for Vector operations
+GenericContainer: Wrapper class for Vector<T> with utility methods
+VectorComparisonDemo: Compares Vector vs ArrayList performance
+InventorySystemMain: Main application with menu interface
+ComprehensiveTest: Tests all classes and edge cases
+ThreadSafetyDemo: Demonstrates Vector thread safety vs ArrayList
+
+COMPILE & RUN:
+Compile: java
+Run main: java HW1.InventorySystemMain
+Run tests: java HW1.ComprehensiveTest
+Run thread demo: java HW1.ThreadSafetyDemo
+
+ASSUMPTIONS:
+Product ID is unique identifier
+All inputs are valid
+
+CHALLENGES:
+Understanding Vector capacity management (trimToSize, ensureCapacity)
+Implementing generic methods with bounded types
+Debugging thread safety issues with ArrayList
+
+LEARNINGS: VECTORS:
+Vector is thread safe (ArrayList doesn't)
+Vector has capacity() method (ArrayList doesn't)
+Vector grows by doubling when full
+
+LEARNINGS: GENERICS:
+<T> allows type-safe code without casting
+Generic methods work with any type
+Type safety at compile time prevents runtime errors
